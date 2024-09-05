@@ -44,6 +44,8 @@
                             include_once "prediccion_truncar_temporal.php";
                             include_once "prediccion_tension_temporal_cargar.php";
                             include_once "prediccion_tension_temporal_mostrar.php";
+                            
+                            
                         ?>
                     </td>
                     <td  width="550px" valign="top">

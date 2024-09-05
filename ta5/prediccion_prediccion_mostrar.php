@@ -31,7 +31,7 @@ try {
             </b>
         </center>
     ";
-    echo '<table border="1" class="tablaDatos">';
+    echo '<table border="1" class="table table-dark">';
     echo '<thead>';
     echo '<tr>';
     echo '<th>DUI</th>';
@@ -53,6 +53,10 @@ try {
     
     echo '</tbody>';
     echo '</table>';
+    
+    echo "<br>";
+    //COEFICIENE DE DETERMINACION
+    include_once "cd.php";
     
 } catch (PDOException $e) {
     // Manejar cualquier error de conexión o consulta

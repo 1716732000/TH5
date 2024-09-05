@@ -37,10 +37,8 @@ y_sistole = aligned_array[:, 1]  # Valores de sistole
 y_diastole = aligned_array[:, 2]  # Valores de diastole
 
 # Crear y entrenar el modelo de regresión lineal
-#model_sistole = LinearRegression().fit(X, y_sistole)
-#model_diastole = LinearRegression().fit(X, y_diastole)
-model_sistole = LinearRegression(fit_intercept=True).fit(X, y_sistole)
-model_diastole = LinearRegression(fit_intercept=True).fit(X, y_diastole)
+model_sistole = LinearRegression().fit(X, y_sistole)
+model_diastole = LinearRegression().fit(X, y_diastole)
 
 # Predecir los valores futuros
 pred_sistole = model_sistole.predict(X[-1].reshape(1, -1))
@@ -58,3 +56,5 @@ conn.commit()
 # Cerrar la conexión
 cursor.close()
 conn.close()
+
+#print(f"Predicción insertada para el paciente con DUI {dui}: Sistole={pred_sistole}, Diastole={pred_diastole}")

@@ -40,6 +40,8 @@
                 <tr><td>&nbsp;</td> <td></td></tr>
             </table>   
         </form> 
-    </body>
+        <br>
+            <?php include_once "tension_valores_rango.php"; ?>
+        </body>
 
 </html>

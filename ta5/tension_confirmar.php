@@ -10,7 +10,7 @@
             <table border="0" width="1100px" class="tablaTemporal">
                 <tr>
                     <td>
-                        <CENTER> <B> CONFIRMACION ADICIO DE REGISTRO TA</B></CENTER>
+                        <CENTER> <B> CONFIRMACION ADICION DE REGISTRO TA</B></CENTER>
                     </td>
                 </tr>
             </table>
