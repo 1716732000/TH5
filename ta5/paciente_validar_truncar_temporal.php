@@ -6,7 +6,7 @@
     $password = '';
 
     try {
-        // Conexión a la base de datos usando PDO
+        // Conexión a la base de datos
         $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
         
         // Configurar PDO para lanzar excepciones en caso de error

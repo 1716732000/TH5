@@ -2,7 +2,7 @@
     include_once "cd_limpiar.php";
 
     // Ruta al archivo Python
-    $pythonFile = 'cd1.py';
+    $pythonFile = 'cd.py';
 
     // Ejecutar el archivo Python usando la función exec
     $output = [];

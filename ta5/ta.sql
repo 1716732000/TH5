@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 21-08-2024 a las 05:34:31
+-- Tiempo de generación: 24-09-2024 a las 21:43:53
 -- Versión del servidor: 10.4.32-MariaDB
--- Versión de PHP: 8.2.12
+-- Versión de PHP: 8.0.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -121,7 +121,7 @@ CREATE TABLE `prediccion` (
 --
 
 INSERT INTO `prediccion` (`id`, `dui`, `sistole`, `diastole`, `ingreso`) VALUES
-(3, 5, 125, 85, '2024-08-20');
+(5, 1, 132, 92, '2024-09-24');
 
 -- --------------------------------------------------------
 
@@ -217,6 +217,26 @@ INSERT INTO `tension` (`id`, `dui`, `sistole`, `diastole`, `ingreso`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `tmpcd`
+--
+
+CREATE TABLE `tmpcd` (
+  `id` int(11) NOT NULL,
+  `dui` int(11) NOT NULL,
+  `cdsistole` int(3) NOT NULL,
+  `cddiastole` int(3) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `tmpcd`
+--
+
+INSERT INTO `tmpcd` (`id`, `dui`, `cdsistole`, `cddiastole`) VALUES
+(1, 1, 1, 1);
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `tmpfactores`
 --
 
@@ -238,7 +258,7 @@ CREATE TABLE `tmpfactores` (
 --
 
 INSERT INTO `tmpfactores` (`id`, `dui`, `historia`, `obesidad`, `sedentarismo`, `alcoholismo`, `tabaquismo`, `diabetes`, `colesterol`, `ingreso`) VALUES
-(3, 5, '2', '2', '2', '2', '2', '3', '2', '2024-08-20');
+(5, 1, '3', '1', '0', '1', '1', '1', '1', '2024-09-24');
 
 -- --------------------------------------------------------
 
@@ -261,7 +281,7 @@ CREATE TABLE `tmppaciente` (
 --
 
 INSERT INTO `tmppaciente` (`id`, `dui`, `nombre`, `apellido`, `sexo`, `nacimiento`, `ingreso`) VALUES
-(0, 5, 'ARMANDO', 'MOLINA', 'MASCULINO', '1951-10-23', '2024-08-01');
+(0, 1, 'LUIS', 'PASTEUR', 'MASCULINO', '1950-10-10', '2024-08-01');
 
 -- --------------------------------------------------------
 
@@ -282,11 +302,16 @@ CREATE TABLE `tmptension` (
 --
 
 INSERT INTO `tmptension` (`id`, `dui`, `sistole`, `diastole`, `ingreso`) VALUES
-(11, 5, 120, 80, '2024-08-15'),
-(12, 5, 120, 80, '2024-08-15'),
-(13, 5, 120, 80, '2024-08-15'),
-(14, 5, 130, 90, '2024-08-15'),
-(15, 5, 120, 80, '2024-08-15');
+(26, 1, 140, 90, '2024-08-14'),
+(27, 1, 140, 90, '2024-08-05'),
+(28, 1, 120, 80, '2024-08-02'),
+(29, 1, 130, 90, '2024-08-02'),
+(30, 1, 140, 100, '2024-08-02'),
+(31, 1, 120, 80, '2024-08-02'),
+(32, 1, 140, 100, '2024-08-02'),
+(33, 1, 140, 100, '2024-08-02'),
+(34, 1, 130, 90, '2024-08-02'),
+(35, 1, 120, 100, '2024-08-01');
 
 -- --------------------------------------------------------
 
@@ -343,6 +368,12 @@ ALTER TABLE `tension`
   ADD KEY `dui` (`dui`);
 
 --
+-- Indices de la tabla `tmpcd`
+--
+ALTER TABLE `tmpcd`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `tmpfactores`
 --
 ALTER TABLE `tmpfactores`
@@ -389,7 +420,7 @@ ALTER TABLE `paciente`
 -- AUTO_INCREMENT de la tabla `prediccion`
 --
 ALTER TABLE `prediccion`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `riesgos`
@@ -404,16 +435,22 @@ ALTER TABLE `tension`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
 
 --
+-- AUTO_INCREMENT de la tabla `tmpcd`
+--
+ALTER TABLE `tmpcd`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT de la tabla `tmpfactores`
 --
 ALTER TABLE `tmpfactores`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `tmptension`
 --
 ALTER TABLE `tmptension`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
 --
 -- AUTO_INCREMENT de la tabla `usuario`
