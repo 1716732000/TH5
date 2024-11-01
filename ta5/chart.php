@@ -10,7 +10,7 @@ try {
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // Consulta para obtener los datos ordenados por la columna "ingreso"
-    $stmt = $pdo->query("SELECT dui, sistole, diastole, ingreso FROM tmptension ORDER BY ingreso ASC");
+    $stmt = $pdo->query("SELECT dui, sistole, diastole, ingreso FROM tmptension ORDER BY ingreso DESC LIMIT 10" );
 
     // Almacenar los resultados en un array
     $data = [];

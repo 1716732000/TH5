@@ -111,5 +111,8 @@ def main():
         cursor.close()
         conexion.close()
 
+    print("(R2) ")
+    print("")
+
 if __name__ == "__main__":
     main()

@@ -20,8 +20,9 @@ try {
             FROM tension 
             WHERE dui = :dui 
             ORDER BY ingreso DESC 
-            LIMIT 10
+            
         ");
+        //LIMIT 10
         $stmt->bindParam(':dui', $dui);
         $stmt->execute();
         $registros = $stmt->fetchAll(PDO::FETCH_ASSOC);

@@ -47,13 +47,13 @@
                                 $edad = $hoy->diff($nacimiento)->y;
 
                                 echo "<tr>
-                                        <td align='center'>" . htmlspecialchars($row['dui']) . "</td>
-                                        <td align='center'>" . htmlspecialchars($row['nombre']) . "</td>
-                                        <td align='center'>" . htmlspecialchars($row['apellido']) . "</td>
-                                        <td align='center'>" . htmlspecialchars($row['sexo']) . "</td>
-                                        <td align='center'>" . htmlspecialchars($row['nacimiento']) . "</td>
-                                        <td align='center'>" . htmlspecialchars($row['ingreso']) . "</td>
-                                        <td align='center'>" . htmlspecialchars($edad) . "</td>
+                                        <td align='left'>" . htmlspecialchars($row['dui']) . "</td>
+                                        <td align='left'>" . htmlspecialchars($row['nombre']) . "</td>
+                                        <td align='left'>" . htmlspecialchars($row['apellido']) . "</td>
+                                        <td align='left'>" . htmlspecialchars($row['sexo']) . "</td>
+                                        <td align='left'>" . htmlspecialchars($row['nacimiento']) . "</td>
+                                        <td align='left'>" . htmlspecialchars($row['ingreso']) . "</td>
+                                        <td align='left'>" . htmlspecialchars($edad) . "</td>
                                     </tr>";
                             }
 

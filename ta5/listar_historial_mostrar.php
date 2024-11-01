@@ -72,10 +72,10 @@ try {
             <?php if (!empty($results)) : ?>
                 <?php foreach ($results as $row) : ?>
                     <tr>
-                        <td align="right"><?php echo htmlspecialchars($row['dui']); ?></td>
-                        <td align="right"><?php echo htmlspecialchars($row['sistole']); ?></td>
-                        <td align="right"><?php echo htmlspecialchars($row['diastole']); ?></td>
-                        <td align="right"><?php echo htmlspecialchars($row['ingreso']); ?></td>
+                        <td align="left"><?php echo htmlspecialchars($row['dui']); ?></td>
+                        <td align="left"><?php echo htmlspecialchars($row['sistole']); ?></td>
+                        <td align="left"><?php echo htmlspecialchars($row['diastole']); ?></td>
+                        <td align="left"><?php echo htmlspecialchars($row['ingreso']); ?></td>
                     </tr>
                 <?php endforeach; ?>
             <?php else : ?>

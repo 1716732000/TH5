@@ -44,10 +44,10 @@ try {
     
     foreach ($records as $record) {
         echo '<tr>';
-        echo '<td align="center">' . htmlspecialchars($record['dui']) . '</td>';
-        echo '<td align="center">' . htmlspecialchars($record['sistole']) . '</td>';
-        echo '<td align="center">' . htmlspecialchars($record['diastole']) . '</td>';
-        echo '<td align="center">' . htmlspecialchars($record['ingreso']) . '</td>';
+        echo '<td align="left">' . htmlspecialchars($record['dui']) . '</td>';
+        echo '<td align="left">' . htmlspecialchars($record['sistole']) . '</td>';
+        echo '<td align="left">' . htmlspecialchars($record['diastole']) . '</td>';
+        echo '<td align="left">' . htmlspecialchars($record['ingreso']) . '</td>';
         echo '</tr>';
     }
     
@@ -55,8 +55,8 @@ try {
     echo '</table>';
     
     echo "<br>";
-    //COEFICIENE DE DETERMINACION
-    include_once "cd.php";
+    //COEFICIENTE DE DETERMINACION
+    //include_once "cd.php";
     
 } catch (PDOException $e) {
     // Manejar cualquier error de conexión o consulta

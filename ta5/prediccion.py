@@ -12,7 +12,7 @@ conn = mysql.connector.connect(
 cursor = conn.cursor()
 
 # Obtener los datos de las tablas
-cursor.execute("SELECT dui, sistole, diastole FROM tmptension ORDER BY dui DESC LIMIT 10")
+cursor.execute("SELECT dui, sistole, diastole FROM tmptension ORDER BY dui DESC")
 tension_data = cursor.fetchall()
 
 cursor.execute("SELECT dui, historia, obesidad, sedentarismo, alcoholismo, tabaquismo, diabetes, colesterol FROM tmpfactores")

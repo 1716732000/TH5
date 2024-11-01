@@ -58,9 +58,9 @@ try {
                         <td>{$row['nombre']}</td>
                         <td>{$row['apellido']}</td>
                         <td>{$row['sexo']}</td>
-                        <td align='right'>{$row['nacimiento']}</td>
-                        <td align='right'>{$row['ingreso']}</td>
-                        <td align='right'>{$row['edad']}</td>
+                        <td align='left'>{$row['nacimiento']}</td>
+                        <td align='left'>{$row['ingreso']}</td>
+                        <td align='left'>{$row['edad']}</td>
                     </tr>";
             }
 
